@@ -41,8 +41,17 @@ Features This Project:
 - Redis for fast Cache Database
 - CORS (Cross-Origin Resource Sharing)
 
-# Who to Setup Project
+## 🚀 Installation Guide
 #### in your local machine
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- MongoDB Atlas account or local MongoDB
+- Redis server
+- Cloudinary account 
+- Stripe account for payments
+
 ## Clone repository:
 ```
 git clone https://github.com/naumanalin/mern-e-commerce-store.git
@@ -50,44 +59,42 @@ git clone https://github.com/naumanalin/mern-e-commerce-store.git
 ### Backend Setup:
 ```
 cd backend
-npm install
-or 
-npm install
-// run commmand 
-npm run dev 
+npm install         # Install dependencies
+npm run dev        # Start backend server
 ```
 
 ### Frontend Setup:
 ```
-cd frontend
-npm install
-or 
-npm install
-// run commmand 
-npm run dev
+cd backend
+npm install         # Install dependencies
+npm run dev        # Start frontend server
 ```
 
-# Setup .env file
+# Setup .env files
+## Backend
 ```bash
-PORT=5000
+PORT=3000
 
 MONGODB_URI=
 UPSTASH_REDIS_URL=
 
 ACCESS_TOKEN_SECRET=your_access_token_secret
-REFRESH_TOKEN_SECRECT=your_refresh_token_secrect
 
 NODE_ENV=development
 NODE_ENV=production
 
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+SECRET_KEY=your_api_secret
 
 STRIPE_SECRET_KEY=your_stripe_secret_key
 CLIENT_URL=http://localhost:5173
 ```
-
+## Frontend
+```bash
+# {import.meta.env.VITE_API_URL};
+VITE_API_URL=http://localhost:3000/api #or your own backend depolyed url
+```
 # API Documentation
 
 ## Table of Backend API's
