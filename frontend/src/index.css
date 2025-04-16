@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.logo {
+    @apply text-3xl font-bold text-green-300
+}
+
+.com-heading {
+    @apply mt-6 text-center text-3xl font-extrabold text-emerald-400
+}
+
+a.active {
+    @apply bg-green-300 font-bold
+}
+
+thead tr th.th {
+    @apply text-left p-4 px-6
+}
+
+tbody tr td {
+    @apply text-left px-6 py-2 border-b-gray-300 
+}
+
+
+.flex-c-b {
+    @apply flex items-center justify-between
+}
+
+.qan-btn {
+    @apply p-1 rounded-md cursor-pointer bg-gray-600
+}
