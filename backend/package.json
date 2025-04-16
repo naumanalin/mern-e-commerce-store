@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "backend/index.js",
   "type": "module",
-  "scripts": {
+ "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "echo 'No build needed for Node.js server'"
   },
   "author": "",
   "license": "ISC",
