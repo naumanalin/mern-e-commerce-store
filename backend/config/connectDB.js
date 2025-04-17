@@ -4,6 +4,7 @@ export const connectDB = async ()=>{
     try {
         const connect = await mongoose.connect(process.env.MONGODB_URI,{
             dbName:"mern-ecommerce-store",
+            serverSelectionTimeoutMS: 5000
             // useNewUrlParser: true, // deprecated options
             // useUnifiedTopology: true,
         })
