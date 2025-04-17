@@ -12,7 +12,7 @@ router.patch('/:id', isLogedIn, isAdmin, toggleFeaturedProductStatus) // we can 
 
 router.get('/featured', getFeaturedProducts) // store in redis because this featured products access by every one
 router.get('/category/:category', getProductsByCategory)
-router.get('/recommended-products', isLogedIn, getRecommendedProcuts )
+router.get('/recommended-products', getRecommendedProcuts )
 
 export default router;
 
